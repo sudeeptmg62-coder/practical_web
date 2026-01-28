@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Background circles */
+.bg-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+}
+
+.pink {
+    background: #ff6ec7;
+    top: -80px;
+    left: -80px;
+}
+
+.blue {
+    background: #4facfe;
+    bottom: -100px;
+    right: -80px;
+}
+
+/* Main card */
+.card {
+    background: rgba(255,255,255,0.95);
+    width: 85%;
+    max-width: 750px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    z-index: 10;
+}
+
+/* Profile */
+.profile {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid #667eea;
+    margin-bottom: 10px;
+}
+
+.profile h1 {
+    color: #333;
+}
+
+.profile h3 {
+    color: #667eea;
+    font-weight: 500;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 22px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Info grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.info-grid p {
+    background: #f3f4ff;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: #333;
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 6px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #667eea, #4facfe);
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+/* Gradient sections */
+.gradient-box {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    padding: 15px;
+    border-radius: 15px;
+    color: #333;
+}
+
+.gradient-box2 {
+    background: linear-gradient(45deg, #a1c4fd, #c2e9fb);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 15px;
+    color: #777;
+}
