@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nishal Shrestha | Bio Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #333;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Container spans full width */
+        .container {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Header */
+        .header {
+            width: 100%;
+            text-align: center;
+            background-color: #111;
+            color: #fff;
+            padding: 40px 15px;
+        }
+
+        .header img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #fff;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .header h3 {
+            font-size: 1.1rem;
+            color: #f0f0f0;
+            margin-bottom: 8px;
+        }
+
+        .header .location {
+            color: #ccc;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .header .summary {
+            max-width: 90%;
+            margin: auto;
+            line-height: 1.5;
+            color: #ddd;
+            font-size: 0.95rem;
+        }
+
+        /* Vertical column */
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 30px;
+        }
+
+        /* Card styles */
+        .card {
+            width: 90%;
+            max-width: 700px;
+            background-color: #fff;
+            color: #111;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+            font-size: 1.5rem;
+        }
+
+        .card p, .card li, .card span, .card div {
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+            word-wrap: break-word;
+        }
+
+        .card ul {
+            list-style: disc inside;
+        }
+
+        /* Card Colors */
+        .purple { background-color: #a569bd; color: #fff; }
+        .orange { background-color: #e67e22; color: #fff; }
+        .blue { background-color: #3498db; color: #fff; }
+        .pink { background-color: #ff6b81; color: #fff; }
+        .dark { background-color: #2c3e50; color: #fff; }
+
+        /* Links */
+        a {
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        /* Blue links for Facebook, school, and campus */
+        .facebook-icon,
+        .school-link,
+        .campus-link {
+            color: #1877f2; /* Blue */
+            font-weight: 500;
+        }
+
+        .facebook-icon:hover,
+        .school-link:hover,
+        .campus-link:hover {
+            color: #0f5acb; /* Darker blue on hover */
+            text-decoration: underline;
+        }
+
+        .facebook-icon i {
+            margin-right: 6px;
+        }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            text-align: center;
+            background-color: #111;
+            color: #ccc;
+            padding: 15px 10px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Skills & Hobbies */
+        .skills span, .hobbies div {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin: 5px 5px 0 0;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .header img { width: 140px; height: 140px; }
+            .header h1 { font-size: 1.8rem; }
+            .header h3 { font-size: 1rem; }
+            .header .summary { font-size: 0.9rem; }
+            .card { width: 95%; padding: 18px; }
+            .card h2 { font-size: 1.3rem; }
+            .skills span, .hobbies div { font-size: 0.8rem; padding: 5px 10px; }
+        }
+
+        @media screen and (max-width: 480px) {
+            .header img { width: 120px; height: 120px; }
+            .header h1 { font-size: 1.5rem; }
+            .header h3 { font-size: 0.9rem; }
+            .header .summary { font-size: 0.85rem; }
+            .card { width: 98%; padding: 15px; }
+            .card h2 { font-size: 1.2rem; }
+            .skills span, .hobbies div { font-size: 0.75rem; padding: 4px 8px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <img src="WhatsApp Image 2026-01-29 at 4.09.08 PM.jpeg" alt="Profile">
+        <h1>Nishal Shrestha</h1>
+        <h3>Web Technology Student</h3>
+        <p class="location">📍 Sundarharaicha 11, Belepur, Morang, Nepal</p>
+        <p class="summary">
+            Aspiring web developer studying BICTE at Sukuna Multiple Campus.
+            Passionate about coding and learning new technologies.
+        </p>
+    </div>
+
+    <!-- Vertical Column -->
+    <div class="column">
+
+        <!-- Personal Info -->
+        <div class="card purple">
+            <h2>👤 Personal Info</h2>
+            <p>📅 DOB: 2062-02-16</p>
+            <p>👨 Gender: Male</p>
+            <p>🌏 Nationality: Nepali</p>
+            <p>🏠 Address: Sundarharaicha 11, Belepur</p>
+            <p>📧 Email: nishalshrestha861@gmail.com</p>
+            <p>📞 Phone: +977-9807088526</p>
+            <p>
+                <a href="https://www.facebook.com/share/1FA3LDcxL1/" target="_blank" class="facebook-icon">
+                    <i class="fab fa-facebook-f"></i> Nishal Shrestha
+                </a>
+            </p>
+        </div>
+
+        <!-- Education -->
+        <div class="card orange">
+            <h2>🎓 Education</h2>
+            <p><b>+2 in Management, Computer Science</b></p>
+            <p>
+                <a href="https://www.sukunaschool.edu.np/index" target="_blank" class="school-link">
+                    Sukuna Secondary School
+                </a>
+            </p>
+            <p>📍 Sundarharaicha 10, Nepal</p>
+            <p>🎯 Passout: 2080/81</p>
+            <p><b>BICTE</b></p>
+            <p>
+                <a href="https://www.sukuna.edu.np/" target="_blank" class="campus-link">
+                    Sukuna Multiple Campus
+                </a>
+            </p>
+            <p>📍 Sundarharaicha 12, Nepal</p>
+            <p>🎯 Expected: 2084/85</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="card blue">
+            <h2>🚀 Skills</h2>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>C Programming</span>
+                <span>C++</span>
+            </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="card pink">
+            <h2>🎯 Hobbies</h2>
+            <div class="hobbies">
+                <div>💻 Coding</div>
+                <div>📚 Reading</div>
+                <div>🎧 Music</div>
+                <div>✈️ Traveling</div>
+            </div>
+        </div>
+
+        <!-- Strengths -->
+        <div class="card dark">
+            <h2>⭐ Strengths</h2>
+            <ul>
+                <li>Quick Learner</li>
+                <li>Problem Solving</li>
+                <li>Team Work</li>
+                <li>Creative Thinking</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+   <footer class="footer">
+    <p>© 2026 Nishal Shrestha. All Rights Reserved.</p>
+   </footer>
+</div>
+
+<script>
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
