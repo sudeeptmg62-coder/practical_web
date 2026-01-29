@@ -1,0 +1,183 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    padding: 30px 15px;
+}
+
+.header img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+}
+
+.header h3 {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin-bottom: 6px;
+}
+
+.header .location {
+    color: #ccc;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+}
+
+.header .summary {
+    max-width: 90%;
+    margin: auto;
+    line-height: 1.5;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+/* Vertical column */
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+/* Card */
+.card {
+    width: 95%;
+    max-width: 700px;
+    background-color: #fff;
+    color: #111;
+    margin: 15px 0;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+}
+
+.card p, .card li, .card span, .card div {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    word-wrap: break-word;
+}
+
+.card ul {
+    list-style: disc inside;
+}
+
+/* Card Colors */
+.purple { background-color: #a569bd; color: #fff; }
+.orange { background-color: #e67e22; color: #fff; }
+.blue { background-color: #3498db; color: #fff; }
+.pink { background-color: #ff6b81; color: #fff; }
+.dark { background-color: #2c3e50; color: #fff; }
+
+/* Links */
+a {
+    text-decoration: none;
+    word-break: break-word;
+}
+
+/* Blue links */
+.facebook-icon,
+.school-link,
+.campus-link {
+    color: #1877f2; /* blue */
+    font-weight: 500;
+}
+
+.facebook-icon:hover,
+.school-link:hover,
+.campus-link:hover {
+    color: #0f5acb;
+    text-decoration: underline;
+}
+
+.facebook-icon i {
+    margin-right: 6px;
+}
+
+/* Skills & Hobbies */
+.skills span, .hobbies div {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px 5px 0 0;
+    font-size: 0.85rem;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+    color: #ccc;
+    padding: 15px 10px;
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .header img { width: 120px; height: 120px; }
+    .header h1 { font-size: 1.6rem; }
+    .header h3 { font-size: 0.95rem; }
+    .header .summary { font-size: 0.88rem; }
+    .card { width: 96%; padding: 16px; }
+    .card h2 { font-size: 1.3rem; }
+    .skills span, .hobbies div { font-size: 0.8rem; padding: 5px 10px; }
+}
+
+@media screen and (max-width: 480px) {
+    .header img { width: 100px; height: 100px; }
+    .header h1 { font-size: 1.4rem; }
+    .header h3 { font-size: 0.85rem; }
+    .header .summary { font-size: 0.8rem; }
+    .card { width: 98%; padding: 14px; }
+    .card h2 { font-size: 1.2rem; }
+    .skills span, .hobbies div { font-size: 0.75rem; padding: 4px 8px; }
+}
