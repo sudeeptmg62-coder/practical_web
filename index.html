@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nishal Shrestha | Bio Data</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <img src="WhatsApp Image 2026-01-29 at 4.09.08 PM.jpeg" alt="Profile">
+        <h1>Nishal Shrestha</h1>
+        <h3>Web Technology Student</h3>
+        <p class="location">📍 Sundarharaicha 12, Belepur, Morang, Nepal</p>
+        <p class="summary">
+            Aspiring web developer studying BICTE at Sukuna Multiple Campus.
+            Passionate about coding and learning new technologies.
+        </p>
+    </div>
+
+    <!-- Vertical Column -->
+    <div class="column">
+
+        <!-- Personal Info -->
+        <div class="card purple">
+            <h2>👤 Personal Info</h2>
+            <p>📅 DOB: 2062-02-16</p>
+            <p>👨 Gender: Male</p>
+            <p>🌏 Nationality: Nepali</p>
+            <p>🏠 Address: Sundarharaicha 12, Belepur</p>
+            <p>📧 Email: nishalshrestha861@gmail.com</p>
+            <p>📞 Phone: +977-9807088526</p>
+            <p>
+                <a href="https://www.facebook.com/share/1FA3LDcxL1/" target="_blank" class="facebook-icon">
+                    <i class="fab fa-facebook-f"></i> Nishal Shrestha
+                </a>
+            </p>
+        </div>
+
+        <!-- Education -->
+        <div class="card orange">
+            <h2>🎓 Education</h2>
+            <p><b>+2 in Management, Computer Science</b></p>
+            <p><a href="https://www.sukunaschool.edu.np/index" target="_blank" class="school-link">Sukuna Secondary School</a></p>
+            <p>📍 Sundarharaicha 10, Nepal</p>
+            <p>🎯 Passout: 2080/81</p>
+            <p><b>BICTE</b></p>
+            <p><a href="https://www.sukuna.edu.np/" target="_blank" class="campus-link">Sukuna Multiple Campus</a></p>
+            <p>📍 Sundarharaicha 12, Nepal</p>
+            <p>🎯 Expected: 2084/85</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="card blue">
+            <h2>🚀 Skills</h2>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>PHP</span>
+                <span>JavaScript</span><br>
+                <span>C Programming</span>
+                <span>C++</span>
+                
+            </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="card pink">
+            <h2>🎯 Hobbies</h2>
+            <div class="hobbies">
+                <div>💻 Coding</div>
+                <div>📚 Reading</div>
+                <div>🎧 Music</div>
+                <div>✈️ Traveling</div>
+                
+            </div>
+        </div>
+
+        <!-- Strengths -->
+        <div class="card dark">
+            <h2>⭐ Strengths</h2>
+            <ul>
+                <li>Quick Learner</li>
+                <li>Problem Solving</li>
+                <li>Team Work</li>
+                <li>Creative Thinking</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+   <footer class="footer">
+    <p>© 2026 Nishal Shrestha. All Rights Reserved.</p>
+</footer>
+      
+    </div>
+
+</div>
+
+<!-- Scroll animation JS -->
+<script>
+const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+},{ threshold: 0.15 });
+
+cards.forEach(card => observer.observe(card));
+</script>
+
+
+
+</body>
+</html>
